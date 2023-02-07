@@ -2,22 +2,23 @@
 2.function/home/3.jajangmyeon.js 를 객체지향으로
 refactoring 하라
 */
-function Food(foodName) {
+function Food(taste, foodName) {
+    this.taste = taste
     this.foodName = foodName
 }
 
-function Chef(foodName) {
-    this.foodName = foodName
-    this.cook = food => food
+function Chef(taste) {
+    this.cook = foodName => new Food(taste, foodName)
 }
 
 function Waiter() {
-    this.pass = food => console.log(food)
+    this.order = (foodName, chef) => chef.cook(foodName)
 }
 
-const chef1 = new Chef('달콤한'${food})
-const chef2 = new Chef2()
-const waiter = new Waiter()
+let chef1 = new Chef('달콤한')
+let chef2 = new Chef('매운')
+let waiter = new Waiter()
 
-waiter.pass(chef1.cook('짜장면'))          
+console.log(waiter.order('짜장면', chef1))
+console.log(waiter.order('짬뽕', chef2))        
                       

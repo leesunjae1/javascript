@@ -15,13 +15,13 @@ makeUser = function(userName, age) {   //가독성있게 변경 후
 console.log(makeUser('doris', 57))
 
 function User(userName) {
-    //this = {}    new를쓰면 추가 된다 
+    //this = {}     new를쓰면 자동추가 된다 
     this.userName = userName
     this.greet = () => console.log(`I am ${this.userName}.`)
-    //return this  new를쓰면 추가 된다
+    //return this    new를쓰면 자동추가 된다
 }
 
-let user1 = User('bob')
+let user1 = User('bob')  
 user1 = new User('bob')
 
 console.log(user1)
@@ -67,5 +67,5 @@ console.log(person)
 console.log(person.age)
 console.log(person == user)
 
-person.peronName = 'mandarin'
+person.personName = 'mandarin'
 console.log(user)

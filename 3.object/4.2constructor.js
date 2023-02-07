@@ -20,7 +20,7 @@ function Ball() {}
 function Player(playerName) {
     this.playerName = playerName
     this.pass = ball => ball
-    this.kick = ball => Ball
+    this.kick = ball => ball
 }
 
 // 최한석이 한아름에게 공을 패스한다. 
