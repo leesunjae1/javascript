@@ -55,4 +55,5 @@ let articles = [article1, article2]
 console.log(articles)
 
 articles.sort(Article.compare) //sort = 정렬
+articles.sort((a, b) => a- b)
 console.log(articles)

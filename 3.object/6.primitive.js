@@ -8,7 +8,7 @@ let user = {
     age: 20,
     [Symbol.toPrimitive](hint) {  // [] symbol타입을 쓸때 사용한다
         return hint == 'string' ? this.userName : this.age
-    } 
+    } // hint에 따라 string, number로 바꿀 수 있다
 }
 
 let user2 = {

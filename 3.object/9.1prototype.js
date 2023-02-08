@@ -27,7 +27,7 @@ console.log(Duck.prototype.constructor)
 console.log(Duck.prototype.constructor == Duck) //서로 참조하고 있다
 
 let duck = new Duck('duck')
-console.log(duck.__proto__) //duck 객체의 prototype을 읽는다
+console.log(duck.__proto__) // __proto__ = duck 객체의 prototype을 읽는다
 console.log(duck.__proto__.constructor)
 
 let duck2 = new Duck('duck2')
