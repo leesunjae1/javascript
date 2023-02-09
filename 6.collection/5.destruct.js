@@ -54,3 +54,13 @@ console.log(x, y, rest)
 //
 let [x2, y2=10] = [1]
 console.log(x2, y2)
+
+//
+let options = {
+    title: 'menu',
+    width: 100,
+    height: 200
+}
+
+let {title, height, width} = options
+console.log(title, height, width)
