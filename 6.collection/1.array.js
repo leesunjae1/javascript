@@ -159,6 +159,7 @@ const items = [
     {itemName: 'computer', price: 100},
     {itemName: 'book', price: 2}
 ]
+
 // find는 콜백에서 true가 나온 상황을 리턴한다 ( 첫번째 상황을 리턴한다)
 const item = items.find(item => item.itemName == 'book')
 console.log(item)
@@ -170,4 +171,16 @@ console.log(interest)
 //
 const elements = items.map((item, i) => 
     `<div>${item.itemName}: ${item.price}</div>`)
-console.log(elements)    
+console.log(elements)  
+
+//
+const totalPrice = items.reduce((total, item) => {
+    total += item.price
+    return total
+}, 0) //초기값을 설정해준다
+console.log(totalPrice)
+
+//
+let isExit = items.some(item => item.itemName == 'book') 
+isExit = items.every(item => item.itemName == 'book')
+console.log(isExit)
