@@ -91,3 +91,4 @@ for(let i = 0; i < arr.length; i++)
 // 위와 다른 for로 arr을 iterating 하라
 for(let e of arr) console.log(e)
 for(let key in arr) console.log(arr[key])
+
