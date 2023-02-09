@@ -13,6 +13,6 @@ try {
 
 try {
     JSON.parse(json)
-} catch(e) {
+} catch(e) { 
     console. log(e.name, '\n', e.message, '\n', e.stack)
 }
