@@ -92,3 +92,82 @@ for(let i = 0; i < arr.length; i++)
 for(let e of arr) console.log(e)
 for(let key in arr) console.log(arr[key])
 
+function print(e) {
+    console.log(e)
+}
+
+function print2(e, i) {
+    console.log(`[${i}]: ${e}`)
+}
+
+function print3(e, i, arr) {
+    arr[i] = e. toUpperCase()
+}
+
+arr = ['a', 'b']
+
+console.log()
+arr.forEach(print)  //forEach의 콜백 3가지 방법
+
+arr.forEach(print2)
+
+arr.forEach(print3)
+console.log(arr)
+
+//
+arr = [1, 2, 3]
+let arr2 = arr.map(e => e * 2)
+console.log(arr, arr2, arr == arr2)
+
+//
+let group = {
+    title: 'art',
+    students:['winston', 'cal', 'maritha'],
+    list() {
+        this.students.forEach(studentName =>
+            console.log(this.title,':', studentName))
+    }
+}
+
+group.list()
+
+//
+arr = ['hello', 'world', 2]
+let greeting = arr.join()
+console.log(greeting, typeof greeting)
+
+console.log(arr.join('/'))
+// arr.join()에서 'helloworld2' 를 return하라
+console.log(arr.join(''))
+
+//
+arr = [1, 2, 3]
+str = arr.toString()
+console.log(str, typeof str)
+
+//
+str = String(arr)
+console.log(str, typeof str)
+
+//
+str =JSON.stringify(arr) 
+console.log(str, typeof str)
+
+//
+const items = [
+    {itemName: 'book', price: 1},
+    {itemName: 'computer', price: 100},
+    {itemName: 'book', price: 2}
+]
+// find는 콜백에서 true가 나온 상황을 리턴한다 ( 첫번째 상황을 리턴한다)
+const item = items.find(item => item.itemName == 'book')
+console.log(item)
+
+// filter (모든 상황이 리턴한다)
+const interest = items.filter((item, i) => item.itemName == 'book')
+console.log(interest)
+
+//
+const elements = items.map((item, i) => 
+    `<div>${item.itemName}: ${item.price}</div>`)
+console.log(elements)    
