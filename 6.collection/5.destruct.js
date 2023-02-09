@@ -58,9 +58,21 @@ console.log(x2, y2)
 //
 let options = {
     title: 'menu',
-    width: 100,
-    height: 200
+    height: 100,
+    width: 200
 }
 
 let {title, height, width} = options
+console.log(title, height, width);
+
+({title, width, height} = options)
 console.log(title, height, width)
+
+let {width: w, height: h} = options
+console.log(w, h)
+
+let {title: t, ...other} = options
+console.log(t, other)
+
+let {title: subject, wide=10} = options
+console.log(subject, wide)
