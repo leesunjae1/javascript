@@ -16,7 +16,7 @@ try {
     laugh(3.1)
 } catch(e) {
     console.log(e.message)
-} finally {
+} finally { //꼭 실행하고싶은 걸 finally에 쓴다
     diff = Date.now() - start
 }
 

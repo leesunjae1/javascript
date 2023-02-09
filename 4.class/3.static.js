@@ -10,7 +10,7 @@ class Article {
         return article1 - article2
     }
 
-    [Symbol.toPrimitive](hint) {
+    [Symbol.toPrimitive](hint) { //serializing
         return hint == 'number' ? this.viewCnt : this.title
     }
 

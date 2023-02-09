@@ -18,4 +18,4 @@ console.log(machine)
 machine.waterAmount = 1
 console.log(machine.waterAmount)
 
-// machine.#waterAmount = 1
+// machine.#waterAmount = 1    직접 접근이 안된다

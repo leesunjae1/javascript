@@ -15,8 +15,8 @@ console.log(machine)
 console.log(Object.keys(machine))
 
 //
-CoffeeMachine = class {
-    _waterAmount
+CoffeeMachine = class { //백도어 backdoor
+    _waterAmount 
 
     get waterAmount() {
         return this._waterAmount + 100
@@ -33,5 +33,5 @@ console.log(machine)
 machine.waterAmount = 1 // set 작용한다
 console.log(machine.waterAmount)
 
-machine._waterAmount = 11
+machine._waterAmount = 11 
 console.log(machine._waterAmount)

@@ -14,7 +14,7 @@ console.log(arr[1])
 
 console.log(arr.length)
 
-let matrix = [
+let matrix = [ //배열의 원소가 배열인 경우 = matrix
     [1, 2],
     [3, 4]
 ]
@@ -48,11 +48,11 @@ arr.reverse()
 console.log(arr)
 
 a = [0, 1, 2]
-b= a.slice(1)
+b = a.slice(1)
 console.log(b, a)
 
 arr = [0, 7, 8, 5]
-arr.splice(0, 2, 1, 2, 3, 4) 
+arr.splice(0, 2, 1, 2, 3, 4) // 0 = index, 2 = length, 1~4 = 넣을항목
 console.log(arr)
 
 arr = ['a', 'b', 'c']
