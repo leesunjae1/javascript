@@ -19,8 +19,8 @@ console.log(
     date.getMinutes(),
     date.getSeconds(),
     date.getMilliseconds(),
-    date.getDay()
-)
+    date.getDay() // index값은 0부터 시작
+)  
 //timestamp
 console.log(date.getTime())
 console.log(Date.now())
