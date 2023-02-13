@@ -43,7 +43,7 @@ interface Account extends Profile {
 }
 
 const account: Account = {
-    userId :1,
+    userId: 1,
     userName: 'cain',
     nickName: 'hero',
     email: 'cain@gmail.com',
@@ -67,7 +67,7 @@ console.log(user)
 
 user = {
     userId: 2,
-    userName: 'abel',   
+    userName: 'abel'
 }
 
 console.log(user)

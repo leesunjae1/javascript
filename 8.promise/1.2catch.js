@@ -14,7 +14,7 @@ promise.then(result => console.log(1),
             result => console.log(result)) 
             
 //
-promise = new Promise((resilve, reject) =>
+promise = new Promise((resolve, reject) =>
     setTimeout(() => {throw new Error('king')}, 3000)) //명령문은 {}를 쓴다     
 
 promise.catch(console.log)    

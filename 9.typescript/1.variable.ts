@@ -6,9 +6,9 @@ let nullableStr: string | null = null //유니온타입
 nullableStr = 'Hi'
 // nullableStr = undefined
 
-let undefinedOrNUmber: undefined | number
-undefinedOrNUmber = 10
-undefinedOrNUmber = undefined
+let undefinedOrNumber: undefined | number
+undefinedOrNumber = 10
+undefinedOrNumber = undefined
 
 let numberOrStringOrNull: number | string | null = null
 numberOrStringOrNull = 1
