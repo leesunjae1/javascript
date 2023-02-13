@@ -1,0 +1,23 @@
+let msg = 'hello';
+// msg = 1  
+let val = 1;
+let nullableStr = null; //유니온타입
+nullableStr = 'Hi';
+// nullableStr = undefined
+let undefinedOrNUmber;
+undefinedOrNUmber = 10;
+undefinedOrNUmber = undefined;
+let numberOrStringOrNull = null;
+numberOrStringOrNull = 1;
+numberOrStringOrNull = 'Bye';
+let isCompleted = true;
+isCompleted = false;
+// isCompleted = 0
+let anyValue = null;
+anyValue = undefined;
+anyValue = 1;
+anyValue = 'hello';
+let a = 1;
+let b = 'b';
+let c = true;
+// ECMAscript6 = es6
